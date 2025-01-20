@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1033490564901",
+    "project_id": "mnprojectdelivsym",
+    "storage_bucket": "mnprojectdelivsym.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1033490564901:android:1ba9e6a86b7a9f6638bccc",
+        "android_client_info": {
+          "package_name": "com.flutter_project.mn_proj_2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBB_sgzruf-3MzefRKUzy9rTCrr8vJcF3w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
