@@ -27,8 +27,13 @@ class _UserSignInState extends State<UserSignIn> {
         ? Loading()
         : Scaffold(
             appBar: AppBar(
-              title: const Text('User Login'),
-              backgroundColor: Colors.brown,
+              title: const Text('User Login',
+              style: TextStyle(color: Colors.white),
+              ),
+              backgroundColor: Colors.black,
+              iconTheme: const IconThemeData(
+                color: Colors.white, // Back arrow color
+              ),
               elevation: 0.0,
               actions: [
                 TextButton.icon(
@@ -112,7 +117,14 @@ class _UserSignInState extends State<UserSignIn> {
                                 }//else automatically goes to home page meaning correctly signed in
                               }
                             },
-                            child: const Text('USER Login'),
+                            style: ButtonStyle(
+                              backgroundColor: WidgetStateProperty.all(Colors.black),
+                            ),
+
+
+                            child: const Text('USER Login',
+                            style: TextStyle(color: Colors.white),
+                            ),
                           ),
                           /*TextButton(
                             onPressed: () {

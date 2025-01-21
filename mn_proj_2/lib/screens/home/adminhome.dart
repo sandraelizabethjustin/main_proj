@@ -12,8 +12,13 @@ class _AdminHomeState extends State<AdminHome> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Admin Dashboard'),
-        backgroundColor: Colors.blue,
+        title: const Text('Admin Dashboard',
+        style: TextStyle(color: Colors.white),
+        ),
+        backgroundColor: Colors.black,
+        iconTheme: const IconThemeData(
+                color: Colors.white, // Back arrow color
+        ),
         actions: [
           TextButton(
             onPressed: () async {
@@ -35,14 +40,15 @@ class _AdminHomeState extends State<AdminHome> {
               onPressed: () {
                 // Navigate to Manage Users
               },
-              child: const Text('Manage Users'),
+              child: const Text('ADD ITEMS'),
             ),
-            ElevatedButton(
+            /*ElevatedButton(
               onPressed: () {
                 // Other admin functionalities
               },
               child: const Text('View Reports'),
             ),
+            */
           ],
         ),
       ),

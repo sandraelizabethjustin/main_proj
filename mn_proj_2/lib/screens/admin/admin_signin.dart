@@ -224,8 +224,14 @@ class _AdminSignInState extends State<AdminSignIn> {
         ? const Loading()
         : Scaffold(
             appBar: AppBar(
-              title: const Text('Admin Login'),
-              backgroundColor: Colors.brown,
+              title: const Text('Admin Login',
+              style: TextStyle(color: Colors.white),
+              ),
+              
+              backgroundColor: Colors.black,
+              iconTheme: const IconThemeData(
+                color: Colors.white, // Back arrow color
+              ),
               elevation: 0.0,
               actions: [
                 TextButton.icon(
@@ -314,7 +320,14 @@ class _AdminSignInState extends State<AdminSignIn> {
                               }
                             }
                           },
-                          child: const Text('Login'),
+                          style: ButtonStyle(
+                            backgroundColor:
+                                WidgetStateProperty.all(Colors.black),
+                          ),
+                          child: const Text('Login',
+                          style: TextStyle(color: Colors.white),
+                      
+                          ),
                         ),
                         const SizedBox(height: 12),
                         Text(

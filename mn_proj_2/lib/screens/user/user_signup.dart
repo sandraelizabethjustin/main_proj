@@ -22,11 +22,16 @@ class _UserSignUpState extends State<UserSignUp> {
   @override
   Widget build(BuildContext context) {
     return loading? Loading(): Scaffold(
-      backgroundColor: Colors.brown[100],
+      //backgroundColor: Colors.brown[100],
       appBar: AppBar(
-        backgroundColor: Colors.brown[500],
+        backgroundColor: Colors.black,
+        iconTheme: const IconThemeData(
+                color: Colors.white, // Back arrow color
+              ),
         elevation: 0.0,
-        title: Text('Sign up to brew crew...'), //register
+        title: Text('User-Sign up ',
+        style: TextStyle(color: Colors.white),
+        ), //register
          
         actions: [
           TextButton.icon(
@@ -115,7 +120,7 @@ class _UserSignUpState extends State<UserSignUp> {
                       }
                     },
                     style: ButtonStyle(
-                      backgroundColor: WidgetStateProperty.all(Colors.pink[400]),
+                      backgroundColor: WidgetStateProperty.all(Colors.black),
                     ),
                     child: Text(
                       'Register',

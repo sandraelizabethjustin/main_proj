@@ -25,11 +25,16 @@ class _AdminSignUpState extends State<AdminSignUp> {
     return loading
         ?const Loading()
         : Scaffold(
-            backgroundColor: Colors.brown[100],
+            //backgroundColor: Colors.brown[100],
             appBar: AppBar(
-              backgroundColor: Colors.brown[500],
+              backgroundColor: Colors.black,
+              iconTheme: const IconThemeData(
+                color: Colors.white, // Back arrow color
+              ),
               elevation: 0.0,
-              title: Text('ADMIN'),
+              title: Text('Admin SignUp',
+              style: TextStyle(color: Colors.white),
+              ),
               actions: [
                 TextButton.icon(
                   icon: Icon(
@@ -117,7 +122,7 @@ class _AdminSignUpState extends State<AdminSignUp> {
                           },
                           style: ButtonStyle(
                             backgroundColor:
-                                WidgetStateProperty.all(Colors.pink[400]),
+                                WidgetStateProperty.all(Colors.black),
                           ),
                           child: Text(
                             'Register',

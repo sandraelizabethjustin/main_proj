@@ -16,7 +16,7 @@ class Wrapper extends StatelessWidget {
     //return either authenticate or home
     //return Authenticate();
     if(newuser==null){
-      return Authenticate(isAdmin:isAdmin);//go to login or signup page
+      return Authenticate(isAdmin:isAdmin);//go to login or signup page(go to authenticate())
     }
     else{
       if (isAdmin == 'admin') {
